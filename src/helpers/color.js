@@ -1,5 +1,6 @@
 import each from 'lodash/each'
 import tinycolor from 'tinycolor2'
+import colorName from './colorName'
 
 export default {
   simpleCheckForValidColor(data) {
@@ -38,6 +39,7 @@ export default {
     return {
       hsl,
       hex: transparent ? 'transparent' : `#${ hex }`,
+      name: transparent ? 'transparent' : colorName(hex),
       rgb,
       hsv,
       oldHue: data.h || oldHue || hsl.h,
@@ -67,6 +69,7 @@ export default {
 export const red = {
   hsl: { a: 1, h: 0, l: 0.5, s: 1 },
   hex: '#ff0000',
+  name: colorName('#ff0000'),
   rgb: { r: 255, g: 0, b: 0, a: 1 },
   hsv: { h: 0, s: 1, v: 1, a: 1 },
 }

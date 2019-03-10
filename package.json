@@ -1,17 +1,21 @@
 {
-  "name": "react-color",
-  "version": "2.16.0",
+  "name": "@tgrx/react-color",
+  "version": "2.17.0",
   "description": "A Collection of Color Pickers from Sketch, Photoshop, Chrome & more",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/casesandberg/react-color.git"
+    "url": "git+https://github.com/tgrstack/react-color.git"
   },
-  "author": "case <case@casesandberg.com>",
-  "license": "MIT",
+  "maintainers": [
+    "Florian Mettetal <florian.mettetal@gmail.com>"
+  ],
   "bugs": {
-    "url": "https://github.com/casesandberg/react-color/issues"
+    "url": "https://github.com/tgrstack/react-color/issues"
   },
+  "license": "MIT",
+  "homepage": "http://casesandberg.github.io/react-color/",
+  "author": "case <case@casesandberg.com>",
   "scripts": {
     "test": "npm run jest && npm run eslint",
     "jest": "jest",
@@ -24,7 +28,6 @@
     "docs-dist": "node ./scripts/docs-dist",
     "storybook": "start-storybook -p 6006"
   },
-  "homepage": "http://casesandberg.github.io/react-color/",
   "keywords": [
     "react",
     "color picker",
@@ -39,8 +42,10 @@
   ],
   "dependencies": {
     "@icons/material": "^0.2.4",
+    "color-name-list": "^3.61.0",
     "lodash": ">4.17.4",
     "material-colors": "^1.2.1",
+    "nearest-color": "^0.4.4",
     "prop-types": "^15.5.10",
     "reactcss": "^1.2.0",
     "tinycolor2": "^1.4.1"
